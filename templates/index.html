@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Search Code</title>
+</head>
+<body>
+    <div class="u1">
+        <h1>Search Coding Problems</h1>
+    </div>
+    <div class="form">
+        <form method="POST">
+            <div class="s1"> {{ form.hidden_tag() }} </div>
+            <div class="s2"> {{ form.search.label }} </div>
+            <div class="s3"> {{ form.search() }} </div>
+            <div class="s4"> {{ form.submit() }} </div>
+        </form>
+    </div>
+    <div class="results">
+        {% if results|length ==0 %}
+        <p>No result found! Try using some reference term.</p>
+        {% endif %}
+        {% for result in results %}
+        <p><a href="{{result}}">{{ result }}</a></p>
+        {% endfor %}
+    </div>
+</body>
+</html>
