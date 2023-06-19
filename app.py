@@ -1,15 +1,25 @@
+import os
 import math
 from flask import Flask,render_template
 app = Flask(__name__)
 from flask_wtf import FlaskForm
 from wtforms import StringField,SubmitField
 
-urlist=[]
-with open("Qdata\Qindex.txt","r",encoding="utf-8") as f:
-    urlist=[x.strip() for x in f.readlines()]
-titlist=[]
-with open("Qdata\index.txt","r",encoding="utf-8") as f:
-    titlist=[x.strip() for x in f.readlines()]
+
+def get_file_path(file_name):
+    base_path = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(base_path, "Qdata", file_name)
+
+
+def load_file_lines(file_name):
+    file_path = get_file_path(file_name)
+    with open(file_path, "r", encoding="utf-8") as f:
+        lines = [x.strip() for x in f.readlines()]
+    return lines
+
+
+urlist = load_file_lines("Qindex.txt")
+titlist = load_file_lines("index.txt")
 
 def load_dic():
     dic={}
