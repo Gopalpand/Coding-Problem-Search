@@ -1821,7 +1821,7 @@
 391. Perfect Rectangle
 518. Coin Change II
 392. Is Subsequence
-1411. Number of Ways to Paint N × 3 Grid
+1411. Number of Ways to Paint N ï¿½ 3 Grid
 1457. Pseudo-Palindromic Paths in a Binary Tree
 2391. Minimum Amount of Time to Collect Garbage
 1904. The Number of Full Rounds You Have Played

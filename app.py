@@ -8,7 +8,6 @@ urlist=[]
 with open("Qdata\Qindex.txt","r",encoding="utf-8") as f:
     urlist=[x.strip() for x in f.readlines()]
 
-
 def load_dic():
     dic={}
     with open("tfidfkey.txt","r",encoding="utf-8") as f:
@@ -47,7 +46,6 @@ def load_inverted():
 inverted_index=load_inverted()
 
 
-
 def get_tf_value(term):
     term_value={}
     if term in inverted_index:
@@ -57,9 +55,8 @@ def get_tf_value(term):
             else:
                 term_value[i]+=1
     for i in term_value:
-        term_value[i]/=len(doc[int(i)])
+        term_value[i]/=(len(doc[int(i)]))
     return term_value
-
 
 
 def get_idf_value(term):

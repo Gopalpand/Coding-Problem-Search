@@ -17,7 +17,7 @@ QDATA_FOLDER="Qdata"
 
 def get_array_of_links():
     arr=[]
-    with open("prf.txt","r",encoding="utf-8") as f:
+    with open("pr.txt","r",encoding="utf-8") as f:
         for i in f:
             arr.append(i)
     return arr
