@@ -7,6 +7,9 @@ from wtforms import StringField,SubmitField
 urlist=[]
 with open("Qdata\Qindex.txt","r",encoding="utf-8") as f:
     urlist=[x.strip() for x in f.readlines()]
+titlist=[]
+with open("Qdata\index.txt","r",encoding="utf-8") as f:
+    titlist=[x.strip() for x in f.readlines()]
 
 def load_dic():
     dic={}
@@ -80,7 +83,7 @@ def calculate_sorted_order_of_documents(query_term):
         potential_document[document]/=len(query_term)
     potential_document=dict(sorted(potential_document.items(),key=lambda item:item[1],reverse=True))
     keylist=[]
-    poturl=[]
+    poturl={}
 
     for i in potential_document:
         keylist.append(i)
@@ -88,7 +91,7 @@ def calculate_sorted_order_of_documents(query_term):
 
     for i in range(0,min(len(keylist),50)):
         # print("Documents :",keylist[i],urlist[int(keylist[i])])
-        poturl.append(urlist[int(keylist[i])])
+        poturl[titlist[int(keylist[i])]]=(urlist[int(keylist[i])])
     return poturl
 
 
@@ -111,6 +114,6 @@ def home():
         results=calculate_sorted_order_of_documents(query_term)
         if (len(results)==0):
             print("No result found! Try using other reference term.")
-        elif (len(results)>20):
-            results=results[:15:]
+        # elif (len(results)>20):
+        #     results=results[:15:]
     return render_template('index.html',form=form,results=results)

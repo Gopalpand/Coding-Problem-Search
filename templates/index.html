@@ -23,7 +23,7 @@
         <p>No result found! Try using some reference term.</p>
         {% endif %}
         {% for result in results %}
-        <p><a href="{{result}}">{{ result }}</a></p>
+        <p><a href="{{results[result]}}">{{ result }}</a></p>
         {% endfor %}
     </div>
 </body>
