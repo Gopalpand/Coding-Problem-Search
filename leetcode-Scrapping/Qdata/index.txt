@@ -1,0 +1,37 @@
+1. 2828. Check if a String Is an Acronym of Words
+2. 553. Optimal Division
+3. 2760. Longest Even Odd Subarray With Threshold
+4. 2490. Circular Sentence
+5. 2731. Movement of Robots
+6. 3008. Find Beautiful Indices in the Given Array II
+7. 884. Uncommon Words from Two Sentences
+8. 2380. Time Needed to Rearrange a Binary String
+9. 1400. Construct K Palindrome Strings
+11. 722. Remove Comments
+12. 2416. Sum of Prefix Scores of Strings
+13. 2550. Count Collisions of Monkeys on a Polygon
+15. 2763. Sum of Imbalance Numbers of All Subarrays
+16. 940. Distinct Subsequences II
+17. 1838. Frequency of the Most Frequent Element
+19. 2444. Count Subarrays With Fixed Bounds
+20. 1662. Check If Two String Arrays are Equivalent
+21. 19. Remove Nth Node From End of List
+22. 492. Construct the Rectangle
+23. 1354. Construct Target Array With Multiple Sums
+24. 1994. The Number of Good Subsets
+25. 944. Delete Columns to Make Sorted
+26. 2605. Form Smallest Number From Two Digit Arrays
+27. 1162. As Far from Land as Possible
+28. 592. Fraction Addition and Subtraction
+29. 698. Partition to K Equal Sum Subsets
+30. 1556. Thousand Separator
+31. 2968. Apply Operations to Maximize Frequency Score
+32. 2007. Find Original Array From Doubled Array
+33. 1611. Minimum One Bit Operations to Make Integers Zero
+34. 1020. Number of Enclaves
+35. 2704. To Be Or Not To Be
+36. 2466. Count Ways To Build Good Strings
+37. 1266. Minimum Time Visiting All Points
+38. 999. Available Captures for Rook
+39. 114. Flatten Binary Tree to Linked List
+40. 2762. Continuous Subarrays
